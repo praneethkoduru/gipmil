@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: auto;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .category h2 {
+            margin-bottom: 20px;
+            background-color: #002E5F;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background-color: #002E5F;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .side-by-side {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .side-by-side .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Interface Registration Form</h1>
+
+        <!-- Category 1: Interface Details -->
+        <div class="category">
+            <h2>Interface Details</h2>
+            <div class="side-by-side">
+                <div class="form-group">
+                    <label for="business-unit">Business Unit</label>
+                    <input type="text" id="business-unit" name="business-unit">
+                </div>
+                <div class="form-group">
+                    <label for="giid">Global Interface ID (GIID)</label>
+                    <input type="text" id="giid" name="giid">
+                </div>
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <input type="text" id="region" name="region">
+                </div>
+                <div class="form-group">
+                    <label for="app-platform">Application Platform</label>
+                    <input type="text" id="app-platform" name="app-platform">
+                </div>
+                <div class="form-group">
+                    <label for="aiid">Application Interface ID (AIID)</label>
+                    <input type="text" id="aiid" name="aiid">
+                </div>
+                <div class="form-group">
+                    <label for="interface-name">Interface Name</label>
+                    <input type="text" id="interface-name" name="interface-name">
+                </div>
+                <div class="form-group">
+                    <label for="integration-type">Integration Type</label>
+                    <input type="text" id="integration-type" name="integration-type">
+                </div>
+                <div class="form-group">
+                    <label for="interface-status">Interface Status</label>
+                    <input type="text" id="interface-status" name="interface-status">
+                </div>
+                <div class="form-group">
+                    <label for="interface-description">Interface Description</label>
+                    <input type="text" id="interface-description" name="interface-description">
+                </div>
+                <div class="form-group">
+                    <label for="interface-complexity">Interface Complexity</label>
+                    <input type="text" id="interface-complexity" name="interface-complexity">
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <input type="text" id="priority" name="priority">
+                </div>
+                <div class="form-group">
+                    <label for="project">Project</label>
+                    <input type="text" id="project" name="project">
+                </div>
+            </div>
+        </div>
+     <!-- Category 2 and 3: Source Details and Target Details side by side -->
+        <div class="row">
+            <div class="column">
+                <div class="category">
+                    <h2>Source Details</h2>
+                    <div class="form-group">
+                        <label for="source-app-name">Source Application Name</label>
+                        <input type="text" id="source-app-name" name="source-app-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-ifid">Source IFID</label>
+                        <input type="text" id="source-ifid" name="source-ifid">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-host-name">Source Host Name</label>
+                        <input type="text" id="source-host-name" name="source-host-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-user-id">Source User ID</label>
+                        <input type="text" id="source-user-id" name="source-user-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-port">Source Port</label>
+                        <input type="text" id="source-port" name="source-port">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-protocol">Source Protocol/Connectors</label>
+                        <input type="text" id="source-protocol" name="source-protocol">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-url">Source URL/Connector Name</label>
+                        <input type="text" id="source-url" name="source-url">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-auth-type">Source Authentication Type</label>
+                        <input type="text" id="source-auth-type" name="source-auth-type">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-push-pull">Source Push/Pull</label>
+                        <input type="text" id="source-push-pull" name="source-push-pull">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-filename">Source Filename</label>
+                        <input type="text" id="source-filename" name="source-filename">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-data-type">Source Data Type</label>
+                        <input type="text" id="source-data-type" name="source-data-type">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-schedule">Source Schedule</label>
+                        <input type="text" id="source-schedule" name="source-schedule">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-data-prod">Source Data Saved in Prod?</label>
+                        <input type="text" id="source-data-prod" name="source-data-prod">
+                    </div>
+                    <div class="form-group">
+                        <label for="source-dl-pic">Source DL/PIC</label>
+                        <input type="text" id="source-dl-pic" name="source-dl-pic">
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="category">
+                    <h2>Target Details</h2>
+                    <div class="form-group">
+                        <label for="target-app-name">Target Application Name</label>
+                        <input type="text" id="target-app-name" name="target-app-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-ifid">Target IFID</label>
+                        <input type="text" id="target-ifid" name="target-ifid">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-host-name">Target Host Name</label>
+                        <input type="text" id="target-host-name" name="target-host-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-user-id">Target User ID</label>
+                        <input type="text" id="target-user-id" name="target-user-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-port">Target Port</label>
+                        <input type="text" id="target-port" name="target-port">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-protocol">Target Protocol/Connectors</label>
+                        <input type="text" id="target-protocol" name="target-protocol">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-url">Target URL</label>
+                        <input type="text" id="target-url" name="target-url">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-auth-type">Target Authentication Type</label>
+                        <input type="text" id="target-auth-type" name="target-auth-type">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-push-pull">Target Push/Pull</label>
+                        <input type="text" id="target-push-pull" name="target-push-pull">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-filename">Target Filename/Table Name</label>
+                        <input type="text" id="target-filename" name="target-filename">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-data-type">Target Data Type</label>
+                        <input type="text" id="target-data-type" name="target-data-type">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-schedule">Target Schedule</label>
+                        <input type="text" id="target-schedule" name="target-schedule">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-data-prod">Target Data Saved in Prod?</label>
+                        <input type="text" id="target-data-prod" name="target-data-prod">
+                    </div>
+                    <div class="form-group">
+                        <label for="target-dl-pic">Target DL/PIC</label>
+                        <input type="text" id="target-dl-pic" name="target-dl-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 4: Configuration Details -->
+        <div class="category">
+            <h2>Configuration Details</h2>
+            <div class="form-group">
+                <label for="project-folder">Project Folder</label>
+                <input type="text" id="project-folder" name="project-folder">
+            </div>
+            <div class="form-group">
+                <label for="scheduler-name">Scheduler Name</label>
+                <input type="text" id="scheduler-name" name="scheduler-name">
+            </div>
+            <div class="form-group">
+                <label for="monitor-name">Monitor Name</label>
+                <input type="text" id="monitor-name" name="monitor-name">
+            </div>
+            <div class="form-group">
+                <label for="source-directory">Source Directory</label>
+                <input type="text" id="source-directory" name="source-directory">
+            </div>
+            <div class="form-group">
+                <label for="source-filemask">Source File Mask</label>
+                <input type="text" id="source-filemask" name="source-filemask">
+            </div>
+            <div class="form-group">
+                <label for="api-url">API URL</label>
+                <input type="text" id="api-url" name="api-url">
+            </div>
+            <div class="form-group">
+                <label for="connector-details">Connector Details</label>
+                <input type="text" id="connector-details" name="connector-details">
+            </div>
+            <div class="form-group">
+                <label for="sap-rice-id">SAP RICE ID</label>
+                <input type="text" id="sap-rice-id" name="sap-rice-id">
+            </div>
+            <div class="form-group">
+                <label for="target-directory">Target Directory</label>
+                <input type="text" id="target-directory" name="target-directory">
+            </div>
+            <div class="form-group">
+                <label for="constant-name">Constant Name</label>
+                <input type="text" id="constant-name" name="constant-name">
+            </div>
+            <div class="form-group">
+                <label for="local-filepath">Local File Path</label>
+                <input type="text" id="local-filepath" name="local-filepath">
+            </div>
+            <div class="form-group">
+                <label for="archive-directory">Archive Directory</label>
+                <input type="text" id="archive-directory" name="archive-directory">
+            </div>
+            <div class="form-group">
+                <label for="error-directory">Error Directory</label>
+                <input type="text" id="error-directory" name="error-directory">
+            </div>
+            <div class="form-group">
+                <label for="scheduled-time">Scheduled Time</label>
+                <input type="text" id="scheduled-time" name="scheduled-time">
+            </div>
+            <div class="form-group">
+                <label for="target-resource-details">Target Resource Details</label>
+                <input type="text" id="target-resource-details" name="target-resource-details">
+            </div>
+            <div class="form-group">
+                <label for="triggering-type">Triggering Type</label>
+                <input type="text" id="triggering-type" name="triggering-type">
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency</label>
+                <input type="text" id="frequency" name="frequency">
+            </div>
+            <div class="form-group">
+                <label for="file-rename">File Rename</label>
+                <input type="text" id="file-rename" name="file-rename">
+            </div>
+            <div class="form-group">
+                <label for="file-encrypted">File Encrypted/Plain?</label>
+                <input type="text" id="file-encrypted" name="file-encrypted">
+            </div>
+            <div class="form-group">
+                <label for="file-compressed">File Compressed/Plain?</label>
+                <input type="text" id="file-compressed" name="file-compressed">
+            </div>
+            <div class="form-group">
+                <label for="function-name">Function Name</label>
+                <input type="text" id="function-name" name="function-name">
+            </div>
+            <div class="form-group">
+                <label for="script-name">Script Name</label>
+                <input type="text" id="script-name" name="script-name">
+            </div>
+            <div class="form-group">
+                <label for="script-location">Script Location</label>
+                <input type="text" id="script-location" name="script-location">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

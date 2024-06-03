@@ -35,7 +35,7 @@ def update_user_password(username, password_hash):
 def home():
     if 'username' in session:
         return redirect(url_for('dashboard'))
-    return render_template('home.html')
+    return render_template('RegistrationForm.html')
 
 # Route for the login page
 @app.route('/login', methods=['GET', 'POST'])
